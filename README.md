@@ -1,13 +1,16 @@
 # freeCodeCamp-CatPhotoApp
 
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDB2eDdmNDR2MWl5d2tla2RuM2lmbWQyOTh3amc5anhyNndhaXJ4byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/22kxQ12cxyEww/giphy.gif">
+
 CatPhotoApp 🐈‍⬛🐈
 <img src="https://www.picgifs.com/generated/namegen/679b80dd75fd7.gif" border="0" /><br >
-Welcome to CatPhotoApp! This is my very first personal project, built as part of my journey to learn web development. I followed the awesome tutorial from FreeCodeCamp and then added a few of my own improvements. It's a simple app that showcases cute cat photos. 😸<br >
+Welcome to CatPhotoApp! This is my very first personal project, built as part of my journey to learn web development. I followed the awesome tutorial from FreeCodeCamp and then added a few of my own improvements. It's a simple app that showcases cute cat photos.<br >
 
-About <a href="https://www.picgifs.com/"><img src="https://www.picgifs.com/generated/namegen/679b83876269c.gif" border="0" /></a><br >
+About ![Alt text](https://www.picgifs.com/generated/namegen/679b83876269c.gif) <br >
 CatPhotoApp is a beginner-friendly project where I learned the basics of web development. The app shows a collection of adorable cat photos, perfect for bringing a smile to your face! 🐾 I built this using HTML, CSS, and JavaScript, and made some updates after the initial version to add a little extra fun.<br >
 
 Installation
+<br >
 To run this project locally, just follow these easy steps:
 1. Clone the repo:
     `git clone https://github.com/yourusername/CatPhotoApp.git`
@@ -18,8 +21,9 @@ To run this project locally, just follow these easy steps:
 <br >
 
 Usage
+<br >
 Once the app is open, you can:
-
-Enjoy browsing through a collection of super cute cat pictures <img src="https://www.picgifs.com/generated/namegen/679b8193eec8b.gif" border="0" />.
-Share your favorite photos with friends or fellow cat lovers.
-Explore and experiment with more features (like adding more photos or customizing the layout)!
+<br >
+🐱 Enjoy browsing through a collection of super cute cat pictures. <br >
+🐱 Share your favorite photos with friends or fellow cat lovers. <br >
+🐱 Explore and experiment with more features (like adding more photos or customizing the layout)! <br >
