@@ -17,7 +17,6 @@ To run this project locally, just follow these easy steps:
     `git clone https://github.com/yourusername/CatPhotoApp.git`
 2. Open the project in your favorite code editor (I recommend VSCode):
     `cd CatPhotoApp`
-    `code .`
 3. Open the `index.html` file in your browser to start enjoying the cat photos!
 
 <strong>Usage</strong>
