@@ -1,7 +1,5 @@
-body {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.page-title {
+      font-size: 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: cadetblue;
 }
