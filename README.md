@@ -19,6 +19,9 @@ To run this project locally, just follow these easy steps:
     `cd CatPhotoApp`
 3. Open the `index.html` file in your browser to start enjoying the cat photos!
 
+Alternatively, visit the below link to see the App on your browser:
+https://dr3amcoder.github.io/freeCodeCamp-CatPhotoApp/
+
 <strong>Usage</strong>
 <br >
 Once the app is open, you can:
