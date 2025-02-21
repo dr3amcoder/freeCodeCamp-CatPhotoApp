@@ -4,7 +4,7 @@
       color: cadetblue;
 }
 
-.cat-photos {
+.cat-photos, cat-facts {
       font-size: 50px;
       font-family: "Truculenta", serif;
       color: coral;
