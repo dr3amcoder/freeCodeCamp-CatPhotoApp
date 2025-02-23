@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap">
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <h2>Let's Get to Know Each Other’s Cats!</h2>
+    <form action="catProfile">
+        <fieldset>
+            <legend>What's your cat's name?</legend>
+            <label for="catName">Cat's Name:</label>
+            <input id="catName" type="text" name="cat-name" placeholder="Lilly" required> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label for="indoor">
+                <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>
+                Indoor
+              </label>
+              <label for="outdoor">
+                <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">
+                Outdoor
+              </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's your cat's personality? Please select all that applies. </legend>
+            <label for="loving">
+                <input id="loving" type="checkbox" name="personality" value="loving">
+                Loving
+              </label>
+              <label for="lazy">
+                <input id="lazy" type="checkbox" name="personality" value="lazy">
+                Lazy
+              </label>
+              <label for="energetic">
+                <input id="energetic" type="checkbox" name="personality" value="energetic">
+                Energetic
+              </label>
+              <label for="playful">
+                <input id="playful" type="checkbox" name="personality" value="playful">
+                Playful
+              </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>What’s your cat’s most favorite activity?</legend>
+            <label for="favoriteActivity">Choose an activity:</label>
+            <select id="favoriteActivity" name="favorite-activity">
+              <option value="chasing-toys">Chasing toys</option>
+              <option value="napping">Napping</option>
+              <option value="climbing">Climbing on furniture</option>
+              <option value="eating">Eating treats</option>
+              <option value="cuddling">Cuddling</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Share a photo of your furry friend!</legend>
+            <label for="catProfilePhoto">Cat Profile Photo</label>
+            <input id="catProfilePhoto" type="file" name="cat-profile-photo" accept="image/*" required>
+            <div id="imagePreview" style="margin-top: 10px;">
+                <img id="previewImage" src="" alt="Cat Profile Photo Preview" style="max-width: 100%; height: auto; display: none;">
+            </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
