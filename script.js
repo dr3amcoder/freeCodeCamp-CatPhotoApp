@@ -8,6 +8,10 @@ document.getElementById('generateBtn').addEventListener('click', function() {
         .catch(error => {
             console.error('Error fetching cat photo:', error);
         });
+        setTimeout(() => {
+                const photoContainer = document.getElementById('cat-photo-container');
+                photoContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 500);
 });
 
 function displayCatPhoto(imageUrl) {
