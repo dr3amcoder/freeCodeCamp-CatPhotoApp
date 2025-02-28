@@ -49,9 +49,24 @@ footer a:hover {
       margin: 5px 0 5px 0;
       padding: 5px;
 }
+
 #cat-photo-container {
       width: 600px;
       height: auto;
       margin-top: 20px;
       border-radius: 10px;
+}
+
+legend {
+      font-size: 20px;
+      color:palevioletred;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+}
+
+label {
+      font-size: 20px;
+      color:teal;
 }
