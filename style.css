@@ -34,18 +34,24 @@ footer a:hover {
       padding: 5px;
 }
 
-.cat-photos-heading {
-      font-size: 30px;
-      font-family: "Truculenta", serif;
-      color:palevioletred;
-      margin: 5px 0 5px 0;
-      padding: 5px;
-}
-
 .cat-photos, .cat-facts, .meet-the-cats {
       font-size: 45px;
       font-family: "Truculenta", serif;
       color: coral;
       margin: 10px 0 5px 0;
       padding: 5px;
+}
+
+.cat-photos-heading, .cat-photo-generator-title {
+      font-size: 30px;
+      font-family: "Truculenta", serif;
+      color:palevioletred;
+      margin: 5px 0 5px 0;
+      padding: 5px;
+}
+#cat-photo-container {
+      width: 600px;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 10px;
 }
