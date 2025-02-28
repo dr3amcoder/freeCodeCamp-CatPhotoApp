@@ -27,9 +27,11 @@ footer a:hover {
 }
 
 .page-title {
-      font-size: 50px;
+      font-size: 85px;
       font-family: "Sofia", sans-serif;;
       color: cadetblue;
+      margin: 5px 0 5px 0;
+      padding: 5px;
 }
 
 .cat-photos-heading {
@@ -41,9 +43,9 @@ footer a:hover {
 }
 
 .cat-photos, .cat-facts, .meet-the-cats {
-      font-size: 50px;
+      font-size: 45px;
       font-family: "Truculenta", serif;
       color: coral;
-      margin: 10px 0 10px 0;
+      margin: 10px 0 5px 0;
       padding: 5px;
 }
