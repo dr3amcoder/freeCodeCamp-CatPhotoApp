@@ -14,6 +14,7 @@ main, footer {
       margin: 0 auto;
       padding-top: 10px;
       flex-grow: 1;
+      display: inline-block;
 }
 
 footer a {
@@ -55,6 +56,28 @@ footer a:hover {
       height: auto;
       margin-top: 20px;
       border-radius: 10px;
+}
+
+.cat-facts-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: lightsalmon;
+      margin: 0;
+}
+
+.cat-facts-headings {
+      font-size: 30px;
+      font-family: "Truculenta", serif;
+      color: plum;
+      margin: 5px 0 5px 0;
+      padding: 5px;
+      text-align: center;
+      width: 700px;
+}
+
+.cat-facts-div {
+      text-align: center;
+      width: 700px;
 }
 
 legend {
