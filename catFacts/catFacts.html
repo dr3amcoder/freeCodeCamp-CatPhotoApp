@@ -12,11 +12,12 @@
     <main>
       <h2 class="cat-facts">Cat Fun Facts</h5>
       <section>
-          <div class="cat-facts-div">
+          <div class="cat-facts-container">
             <h5 class="cat-facts-headings">🐾 Think you know cats? Think again! 😺</h5>
             <span>From their secret communication skills to their gravity-defying jumps, cats are full of surprises.
             Whether you’re a devoted cat whisperer or just here for some feline fun, prepare to have your mind blown with some claw-some facts! 🐱✨</span>
           </div>
+          <br>
           <ul class="no-bullets">
               <li>
                 <span class="cat-facts-title">Whisker Wonders:</span>
@@ -60,12 +61,21 @@
               </li>
           </ul>
           <p>Who knew cats were such <em>fascinating</em> creatures, right? 😸</p>
+          <br>
       </section>
       <section>
         <h5 class="cat-facts-headings">📢 Want a fresh dose of cat wisdom?</h5>
-        <span>Hit the button and let the Cat Fact Generator fetch you a random meow-mazing fact!
-        <br>You never know what whisker-twitching truth you’ll discover next! 🐾🔍</span>
+        <div>
+          <span>Hit the button and let the Cat Fact Generator fetch you a random meow-mazing fact!
+          <br>You never know what whisker-twitching truth you’ll discover next! 🐾🔍</span>
+        </div>
+        <br>
+        <div class="cat-facts-container">
+          <button id="generateCatFactsBtn">Generate more Cat Facts</button>
+          <p id="generated-cat-fact">Cat Fact</p>
+        </div>
       </section>
     </main>
-    </body>
+    <script src="catFactGenerator.js"></script>
+  </body>
 </html>
