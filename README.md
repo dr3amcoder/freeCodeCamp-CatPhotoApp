@@ -44,14 +44,14 @@ To run this project locally, just follow these easy steps:
 
 
 # Deployment
-Want to view the webapp only? Visit the below link to see CatPhotoApp on your browser:
+Want to view the webapp only? Visit the below link to see CatPhotoApp on your browser: <br >
     `https://dr3amcoder.github.io/freeCodeCamp-CatPhotoApp/`
-    P.S: This uses the free plan on Render, thus, loading time maybe slow. <br >
+<strong>P.S:</strong> This uses the free plan on Render, thus, loading time maybe slow. <br >
 
 
 # Curent features and capabilities
 Once the app is open, you can: </strong><br >
-<strong>📍 Cat Photos <br >
+<strong>📍 Cat Photos </strong><br >
 🐱 Enjoy browsing through a collection of super cute cat pictures. <br >
 🐱 Dynamically generate cat photos using a free Cat Photos API. <br >
 
