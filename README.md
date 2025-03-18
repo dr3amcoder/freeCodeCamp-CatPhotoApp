@@ -8,7 +8,7 @@ Welcome to CatPhotoApp! This is my very first personal project, built as part of
 
 # 💫 About
 CatPhotoApp is a beginner-friendly project where I learned the basics of web development. The app shows a collection of adorable cat photos, perfect for bringing a smile to your face! 🐾 <br >
-P.S. The project began by following the tutorial on FreeCodeCamp to learn the basic of HTML & CSS, I then made some updates after the initial version to add a little extra fun.<br >
+<strong>P.S.</strong> The project began by following the tutorial on FreeCodeCamp to learn the basic of HTML & CSS, I then made some updates after the initial version to add a little extra fun.<br >
 
 
 # 💻 Tech Stack:
@@ -45,7 +45,7 @@ To run this project locally, just follow these easy steps:
 
 # Deployment
 Want to view the webapp only? Visit the below link to see CatPhotoApp on your browser: <br >
-    `https://dr3amcoder.github.io/freeCodeCamp-CatPhotoApp/`
+    `https://dr3amcoder.github.io/freeCodeCamp-CatPhotoApp/` <br >
 <strong>P.S:</strong> This uses the free plan on Render, thus, loading time maybe slow. <br >
 
 
