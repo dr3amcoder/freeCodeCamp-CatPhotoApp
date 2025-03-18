@@ -4,6 +4,7 @@
   "description": "<img src=\"https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDB2eDdmNDR2MWl5d2tla2RuM2lmbWQyOTh3amc5anhyNndhaXJ4byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/22kxQ12cxyEww/giphy.gif\">",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
