@@ -39,13 +39,13 @@ To run this project locally, just follow these easy steps:
 4. Run the server locally:
     `npm start`
 5. Access the app: Open your browser and go to the below link to start enjoying the app!:
-    `http://localhost:5500`
-    P.S: replace the port to the port you set up if you have issues accesing the above port.
+    `http://localhost:5500`<br >
+    <strong>P.S:</strong> replace `5500` to the port you have set up if you are facing issues accesing `5500`.
 
 
 # Deployment
 Want to view the webapp only? Visit the below link to see CatPhotoApp on your browser: <br >
-    `https://dr3amcoder.github.io/freeCodeCamp-CatPhotoApp/` <br >
+    `https://catphotoapp-ry9b.onrender.com` <br >
 <strong>P.S:</strong> This uses the free plan on Render, thus, loading time maybe slow. <br >
 
 
