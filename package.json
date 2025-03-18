@@ -1,0 +1,24 @@
+{
+  "name": "freecodecamp-catphotoapp",
+  "version": "1.0.0",
+  "description": "<img src=\"https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDB2eDdmNDR2MWl5d2tla2RuM2lmbWQyOTh3amc5anhyNndhaXJ4byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/22kxQ12cxyEww/giphy.gif\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dr3amcoder/freeCodeCamp-CatPhotoApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dr3amcoder/freeCodeCamp-CatPhotoApp/issues"
+  },
+  "homepage": "https://github.com/dr3amcoder/freeCodeCamp-CatPhotoApp#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  }
+}
