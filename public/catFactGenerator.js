@@ -21,27 +21,22 @@
 // 6. Cat facts is displayed to the appropriate element in the web page
 
 
+const generateCatFactsButton = document.getElementById('generateCatFactsBtn');
+const generatedCatFacts = document.getElementById('generated-cat-fact');
 
+generateCatFactsButton.addEventListener('click', async () => {
+    try {
+        const response = await fetch('/catFactsGenerator');
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            generatedCatFacts.textContent = data.fact;
+        } else {
+            throw new Error('Network response was not ok');
+        } 
+    } catch (error) {
+        console.error('There has been a problem with your fetch operation:', error);
+        generatedCatFacts.textContent = 'Failed to fetch cat fact';
+    }
+});
 
-// DRAFT Code -- below code contains issues with CORS; replacing with my own db to manage and amend data and create this project into full stack
-// const fetchCatFact = () => {
-//     fetch('https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1')
-//         .then(response => {
-//             console.log(response)
-//             if (response.ok) {
-//                 return response.json();
-//             }
-//             throw new Error('Network response was not ok')
-//         })
-//         .then(data => {
-//             document.getElementById('generated-cat-fact').innerText = data.text;
-//         })
-//         .catch(error => {
-//             console.error('There has been a problem with your fetch operation:', error);
-//             document.getElementById('generated-cat-fact').innerText = 'Failed to fetch cat fact'
-//         })
-// }
-
-
-
-// document.getElementById('generateCatFactsBtn').addEventListener('click', fetchCatFact);

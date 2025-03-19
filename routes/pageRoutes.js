@@ -15,7 +15,7 @@ router.get('/catFacts', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'views', 'catFacts.html'));
 });
 
-router.get('/api/cat-fact', async (req, res) => {
+router.get('/catFactsGenerator', async (req, res) => {
   try {
     const facts = await catFactsModel.find();
     if (facts.length === 0) {

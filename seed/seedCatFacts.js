@@ -99,4 +99,6 @@ const seedCatFacts = async () => {
   }
 }
 
+seedCatFacts();
+
 module.exports = seedCatFacts;
