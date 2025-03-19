@@ -49,7 +49,7 @@ Want to view the webapp only? Visit the below link to see CatPhotoApp on your br
 <strong>P.S:</strong> This uses the free plan on Render, thus, loading time maybe slow. <br >
 
 
-# Curent features and capabilities
+# Current features and capabilities
 Once the app is open, you can: </strong><br >
 <strong>📍 Cat Photos </strong><br >
 🐱 Enjoy browsing through a collection of super cute cat pictures. <br >
