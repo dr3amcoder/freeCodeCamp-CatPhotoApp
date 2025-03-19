@@ -8,6 +8,6 @@ const catFactsSchema = new Schema({
   }
 });
 
-const CatFacts = model('CatFacts', catFactsSchema);
+const catFactsModel = model('CatFacts', catFactsSchema);
 
-module.exports = CatFacts;
+module.exports = catFactsModel;

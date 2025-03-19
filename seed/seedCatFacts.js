@@ -1,18 +1,15 @@
 const mongoose = require("mongoose");
-const CatFacts = require("../models/CatFacts");
+const catFactsModel = require('../models/catFactsModel');
 require('dotenv').config();
 
 const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/catphotoapp';
 
 const seedCatFacts = async () => {
   try {
-    await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(mongoURI);
     console.log('Connected to MongoDB');
 
-    await CatFacts.create([
+    await catFactsModel.create([
       { fact: "Cats can rotate their ears 180 degrees." },
       { fact: "A cat's whiskers are roughly as wide as its body." },
       { fact: "The average cat sleeps 12-16 hours per day." },
