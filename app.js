@@ -1,28 +1,28 @@
 const express = require('express');
-const path = require('path');
-
 const app = express();
+const pageRoutes = require('./routes/pageRoutes')
+const mongoose = require('mongoose');
+const seedCatFacts = require('./seed/seedCatFacts');
+require('dotenv').config();
 
-// Serve static files from 'public' folder (CSS, JS, images)
-app.use(express.static(path.join(__dirname, 'public')));
+const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/catphotoapp';
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB connected'))
+  .catch((err) => {
+    console.error('Error connecting to MongoDB:', err);
+    process.exit(1);  // Stop the server if MongoDB connection fails
+  });
 
-// Serve HTML files from 'views' folder
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'index.html'));
-});
+
+// Optionally, run the seeding functionality
+if (process.env.SEED_DB === 'true') {
+  seedCatFacts();
+}
 
 
-app.get('/catFacts', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'catFacts.html'));
-});
+// Instruction to retrieve routes
+app.use('/', pageRoutes);
 
-app.get('/catPhotos', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'catPhotos.html'));
-});
-
-app.get('/catProfiles', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'catProfiles.html'));
-});
 
 // Start the server
 app.listen(5500, () => {

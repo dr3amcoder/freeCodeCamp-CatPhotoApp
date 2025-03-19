@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/dr3amcoder/freeCodeCamp-CatPhotoApp#readme",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.12.1"
   }
