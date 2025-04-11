@@ -1,30 +1,44 @@
 const express = require('express');
-const app = express();
-const pageRoutes = require('./routes/pageRoutes')
 const mongoose = require('mongoose');
 const seedCatFacts = require('./seed/seedCatFacts');
+const pageRoutes = require('./routes/pageRoutes');
 require('dotenv').config();
 
-const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/catphotoapp';
-mongoose.connect(mongoURI)
-  .then(() => console.log('MongoDB connected'))
-  .catch((err) => {
-    console.error('Error connecting to MongoDB:', err);
-    process.exit(1);  // Stop the server if MongoDB connection fails
-  });
+const app = express();
+const mongoURI = process.env.MONGO_URI;
 
-
-// Optionally, run the seeding functionality
-if (process.env.SEED_DB === 'true') {
-  seedCatFacts();
-}
-
-
-app.use(express.static('public')) // Instruction to retrieve routes
-app.use('/', pageRoutes); // Instruction to serve static files from /public
-
-
-// Start the server
-app.listen(5500, () => {
-  console.log('Server running on http://localhost:5500/ ');
+mongoose.connection.on('connected', () => {
+  console.log('✅ [Mongoose] Connection event: connected');
 });
+
+mongoose.connection.on('error', err => {
+  console.error('❌ [Mongoose] Connection error event:', err);
+});
+
+mongoose.connection.on('disconnected', () => {
+  console.log('🔌 [Mongoose] Connection event: disconnected');
+});
+
+const startServer = async () => {
+  try {
+    await mongoose.connect(mongoURI);
+    console.log('🌐 Connected to MongoDB with mongoose.connect');
+
+    if (process.env.SEED_DB === 'true') {
+      await seedCatFacts();
+    }
+
+    app.use(express.static('public'));
+    app.use('/', pageRoutes);
+
+    app.listen(5500, () => {
+      console.log('🚀 Server running at http://localhost:5500');
+    });
+
+  } catch (err) {
+    console.error('❌ Failed to connect to MongoDB:', err);
+    process.exit(1);
+  }
+};
+
+startServer();

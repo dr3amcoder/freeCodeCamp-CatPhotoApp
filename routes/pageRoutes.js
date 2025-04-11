@@ -1,7 +1,7 @@
+const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const catFactsModel = require('../models/catFactsModel');
 
 router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'views', 'index.html'));
@@ -17,7 +17,10 @@ router.get('/catFacts', (req, res) => {
 
 router.get('/catFactsGenerator', async (req, res) => {
   try {
-    const facts = await catFactsModel.find();
+    console.log('🔍 Mongoose connection readyState:', mongoose.connection.readyState);
+
+    const CatFactsModel = require('../models/catFactsModel');
+    const facts = await CatFactsModel.find();
     if (facts.length === 0) {
       return res.status(404).send('No cat facts available');
     }

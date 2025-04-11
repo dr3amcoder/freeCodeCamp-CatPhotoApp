@@ -6,9 +6,6 @@ const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/catphotoapp
 
 const seedCatFacts = async () => {
   try {
-    await mongoose.connect(mongoURI);
-    console.log('Connected to MongoDB');
-
     await catFactsModel.create([
       { fact: "Cats can rotate their ears 180 degrees." },
       { fact: "A cat's whiskers are roughly as wide as its body." },
@@ -90,15 +87,26 @@ const seedCatFacts = async () => {
       { fact: "The Chartreux breed is known for its 'smiling' expression due to its facial structure." },
       { fact: "Cats have five toes on their front paws but only four on their back paws." },
     ]);
-    console.log('Cat facts added to the database!');
-
+    console.log('🎉 Cat facts added to the database!');
   } catch (err) {
-    console.error('Error adding cat facts:', err);
-  } finally { 
-    mongoose.connection.close(); // close db connection in a controlled manner after the seeding is complete or if an error occurs.
+    console.error('❌ Error adding cat facts:', err);
   }
-}
-
-seedCatFacts();
+};
 
 module.exports = seedCatFacts;
+
+// ✅ Only run if file is executed directly via terminal
+if (require.main === module) {
+  console.log('🛠️ Running seedCatFacts.js as a standalone script...');
+
+  const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/catphotoapp';
+
+  mongoose.connect(mongoURI)
+    .then(() => seedCatFacts())
+    .then(() => mongoose.connection.close())
+    .then(() => console.log('🔌 MongoDB connection closed after seeding.'))
+    .catch(err => {
+      console.error('❌ Error during standalone seeding:', err);
+      mongoose.connection.close();
+    });
+}
