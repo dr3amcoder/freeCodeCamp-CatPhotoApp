@@ -92,6 +92,17 @@ footer a:hover {
       width: 700px;
 }
 
+.cat-generated-facts-container {
+      width: 600px;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 10px;
+      display: inline;
+      font-size: 20px;
+      font-weight: bold;
+      color: lightsalmon;
+}
+
 legend {
       font-size: 20px;
       color:palevioletred;
