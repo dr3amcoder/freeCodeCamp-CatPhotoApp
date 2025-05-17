@@ -56,6 +56,18 @@ footer a:hover {
       height: auto;
       margin-top: 20px;
       border-radius: 10px;
+      display: inline;
+}
+
+.cat-photo-subheading {
+      font-size: 20px;
+      font-family: "Truculenta", serif;
+      color: plum;
+      margin: 5px 0 5px 0;
+      padding: 5px;
+      text-align: center;
+      width: 700px;
+      display: inline;
 }
 
 .cat-facts-title {
@@ -104,4 +116,22 @@ ul.no-bullets {
 ul.no-bullets li {
       display: inline-block;
       margin-right: 20px;
+}
+
+button {
+  background-color: palevioletred;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: cadetblue; /* Green */
+  color: white;
 }
