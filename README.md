@@ -40,7 +40,7 @@ To run this project locally, just follow these easy steps:
     `npm start`
 5. Access the app: Open your browser and go to the below link to start enjoying the app!:
     `http://localhost:5500`<br >
-    <strong>P.S:</strong> replace `5500` to the port you have set up if you are facing issues accesing `5500`.
+    <strong>P.S:</strong> replace `5500` to the port you have set up if you are facing issues accessing `5500`.
 
 
 # Deployment
@@ -57,14 +57,13 @@ Once the app is open, you can: </strong><br >
 
 <strong>📍 Cat Facts </strong><br >
 🐱 View interesting cat facts. <br >
-🐱 Discover new interesting cat facts. <br >
+🐱 Discover new interesting cat facts using saved cat facts from a mongo database. <br >
 
 <strong>📍 Cat Profiles </strong><br >
 🐱 Create a Cat Profile to get to know other cat lovers' cats! <br >
 
 
 # 🛠️ Future features
-🐱 Discover new interesting cat facts using the data saved in the mongo database. <br >
 🐱 Create a Cat Profile form functionality <br >
 🐱 Share your favorite facts with friends or fellow cat lovers. <br >
 🐱 Share your favorite photos with friends or fellow cat lovers. <br >
