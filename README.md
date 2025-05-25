@@ -60,11 +60,13 @@ Once the app is open, you can: </strong><br >
 🐱 Discover new interesting cat facts using saved cat facts from a mongo database. <br >
 
 <strong>📍 Cat Profiles </strong><br >
-🐱 Create a Cat Profile to get to know other cat lovers' cats! <br >
+🐱 Create a Cat Profile to get to know your cats! <br >
 
 
 # 🛠️ Future features
-🐱 Create a Cat Profile form functionality <br >
+🐱 Create a Navbar <br >
+🐱 Create an about me section <br >
+🐱 Create a section for the lessons learned from this personal project <br >
 🐱 Share your favorite facts with friends or fellow cat lovers. <br >
 🐱 Share your favorite photos with friends or fellow cat lovers. <br >
 
