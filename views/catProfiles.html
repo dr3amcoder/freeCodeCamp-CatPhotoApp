@@ -11,7 +11,7 @@
   <body>
     <main>
       <h2 class="meet-the-cats">Let's Get to Know Each Other’s Cats!</h2>
-      <form action="catProfile">
+      <form id="catForm" method="POST" action="catForm">
           <fieldset>
               <legend>What's your cat's name?</legend>
               <label for="catName">Cat's Name:</label>
@@ -62,17 +62,18 @@
               </select>
           </fieldset>
 
-          <fieldset>
+          <!-- <fieldset>
               <legend>Share a photo of your furry friend!</legend>
               <label for="catProfilePhoto">Cat Profile Photo</label>
               <input id="catProfilePhoto" type="file" name="cat-profile-photo" accept="image/*" required>
               <div id="imagePreview" style="margin-top: 10px;">
                   <img id="previewImage" src="" alt="Cat Profile Photo Preview" style="max-width: 100%; height: auto; display: none;">
               </div>
-          </fieldset>
-
+          </fieldset> -->
+          <br>
           <button type="submit">Submit</button>
       </form>
     </main>
+    <script src="/catForm.js"></script>
   </body>
 </html>

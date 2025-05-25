@@ -4,6 +4,7 @@ require('dotenv').config();
 
 const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/catphotoapp';
 
+// TODO: refactor - split the logic to follow SRP principle
 const seedCatFacts = async () => {
   try {
     await catFactsModel.create([
