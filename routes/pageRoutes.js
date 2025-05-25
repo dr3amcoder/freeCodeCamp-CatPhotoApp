@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const catForm = require('../models/catProfilesModel');
+const catProfilesModel = require('../models/catProfilesModel');
 
 router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'views', 'index.html'));
@@ -40,9 +40,18 @@ router.get('/catProfiles', (req, res) => {
 
 router.post('/catForm', async (req, res) => {
   try {
+    console.log('📦 Received body:', req.body);
     const { name, type, personalities, activity } = req.body;
-    const newCatProfile = new catForm({ name, type, personalities, activity });
+
+    const newCatProfile = new catProfilesModel({
+      name,
+      type,
+      personalities,
+      activity
+    });
+
     const savedCat = await newCatProfile.save();
+
     res.status(201).json(savedCat);
 
   } catch (error) {

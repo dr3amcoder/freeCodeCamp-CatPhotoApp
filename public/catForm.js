@@ -20,8 +20,16 @@ const submitHandler = async (event) => {
     console.log('Cat Personality', catPersonalitySelected)
     console.log('Cat Favourite Activity', catFavoriteActivitySelected)
 
+    const catData = {
+        name: catNameValue,
+        type: catTypeSelected,
+        personalities: catPersonalitySelected,
+        activity: catFavoriteActivitySelected
+    }
+
 
     try {
+        console.log('catData to send:', catData);
         const response = await fetch('/catForm', {
             method: 'POST',
             headers: {
@@ -37,3 +45,6 @@ const submitHandler = async (event) => {
     console.error('❌ Error submitting cat profile:', error);
     }
 };
+
+
+catForm.addEventListener('submit', submitHandler);
