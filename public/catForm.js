@@ -4,6 +4,11 @@ const catName = document.getElementById('catName');
 const catType = document.getElementsByName('indoor-outdoor');
 const catPersonality = document.getElementsByName('personality');
 const catFavoriteActivity = document.getElementById('favoriteActivity');
+const successMessage = document.getElementById('successfulCatProfile');
+
+const successfulMsg = 'Cat profile sent successfully!';
+const unsuccessfulMsg = 'Please fill out all fields before submitting.'
+
 
 const submitHandler = async (event) => {
     event.preventDefault();
@@ -15,10 +20,8 @@ const submitHandler = async (event) => {
         .map(checkbox => checkbox.value);
     const catFavoriteActivitySelected = catFavoriteActivity.value;
 
-    console.log('Cat Name', catNameValue)
-    console.log('Cat Type', catTypeSelected)
-    console.log('Cat Personality', catPersonalitySelected)
-    console.log('Cat Favourite Activity', catFavoriteActivitySelected)
+    !catNameValue || !catTypeSelected || catPersonalitySelected.length === 0 || !catFavoriteActivitySelected
+    ? successMessage.textContent = successfulMsg : unsuccessfulMsg
 
     const catData = {
         name: catNameValue,
@@ -26,7 +29,6 @@ const submitHandler = async (event) => {
         personalities: catPersonalitySelected,
         activity: catFavoriteActivitySelected
     }
-
 
     try {
         console.log('catData to send:', catData);
@@ -37,12 +39,24 @@ const submitHandler = async (event) => {
             },
             body: JSON.stringify(catData),
         });
+
+        if (!response.ok) {
+            throw new Error('Failed to save cat profile');
+        }
         
         const result = await response.json();
         console.log('✅ Server response:', result);
 
+        successMessage.style.display = 'block';
+
+        catForm.reset();
+
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+        }, 3000);
+
     } catch (error) {
-    console.error('❌ Error submitting cat profile:', error);
+        console.error('❌ Error submitting cat profile:', error);
     }
 };
 
