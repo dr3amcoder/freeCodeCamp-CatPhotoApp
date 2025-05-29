@@ -1,13 +1,21 @@
 const navBar = 
-    `<nav class="navBar">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/catPhotos">Cat Photos</a></li>
-            <li><a href="/catFacts">Cat Facts</a></li>
-            <li><a href="/catProfiles">Cat Profile</a></li>
+    `<nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/catPhotos" class="nav-link">Cat Photos</a></li>
+            <li><a href="/catFacts" class="nav-link">Cat Facts</a></li>
+            <li><a href="/catProfiles" class="nav-link">Cat Profile</a></li>
         </ul>
     </nav>`
 ;
 
 
 document.getElementById('navBar').innerHTML = navBar;
+
+const currentPath = window.location.pathname;
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.getAttribute('href') == currentPath) {
+        link.classList.add('active')
+    }
+})

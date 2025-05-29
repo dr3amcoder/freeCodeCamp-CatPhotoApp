@@ -5,7 +5,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
       height: auto;
 }
 
@@ -146,4 +146,59 @@ button:hover {
   background-color: cadetblue; /* Green */
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.navbar {
+      width: 100%;
+      /* background-color: white; */
+      padding: 10px 0;
+      text-align: center;
+      /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 10px;
+}
+
+.navbar-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+}
+
+.navbar-list li {
+      display: inline-block;
+      margin: 0 20px;
+}
+
+.nav-link {
+      font-family: "Truculenta", serif;
+      font-size: 20px;
+      color: lightslategray;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 12px;
+      position: relative; /* needed for positioning the cat */
+      transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease, border-bottom 0.3s ease;      letter-spacing: 2px;
+      font-weight: 700;
+      color: coral;
+      border-bottom: 2px solid coral;
+}
+
+.nav-link.active {
+      background-color: cadetblue;
+      color: white;
+      font-weight: bold;
+      border-radius: 12px;
 }
