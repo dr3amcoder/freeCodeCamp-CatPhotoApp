@@ -40,7 +40,7 @@ To run this project locally, just follow these easy steps:
     `npm start`
 5. Access the app: Open your browser and go to the below link to start enjoying the app!:
     `http://localhost:5500`<br >
-    <strong>P.S:</strong> replace `5500` to the port you have set up if you are facing issues accessing `5500`.
+    <strong>P.S:</strong> replace `5500` to the port you have set up if you are facing issues.
 
 
 # Deployment
@@ -65,15 +65,14 @@ Once the app is open, you can: </strong><br >
 
 # 🛠️ Future features
 🐱 Create a Navbar <br >
-🐱 Create an about me section <br >
-🐱 Create a section for the lessons learned from this personal project <br >
 🐱 Share your favorite facts with friends or fellow cat lovers. <br >
 🐱 Share your favorite photos with friends or fellow cat lovers. <br >
 
 
 # 🎯 Future enhancements
 💉 Write Unit, Integration and E2E Tests <br >
-💉 Enhance styling <br >
 💉 Create About Me Page <br >
+💉 Create Reflection page to document learnings from this project <br >
 💉 Create a Nav bar <br >
 💉 Improve Home Page <br >
+💉 Enhance styling <br >
