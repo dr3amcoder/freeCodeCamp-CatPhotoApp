@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 
 router.get('/catPhotos', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'views', 'catPhotos.html'));
-  });  
+});  
 
 router.get('/catFacts', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'views', 'catFacts.html'));
@@ -60,5 +60,16 @@ router.post('/catForm', async (req, res) => {
 
   }
 });
+
+
+router.get('/aboutMe', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'views', 'aboutMe.html'));
+});  
+
+
+router.get('/developerReflections', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'views', 'developerReflections.html'));
+});  
+
 
 module.exports = router;
