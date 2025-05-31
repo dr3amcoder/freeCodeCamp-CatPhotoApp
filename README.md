@@ -64,7 +64,6 @@ Once the app is open, you can: </strong><br >
 
 
 # 🛠️ Future features
-🐱 Create a Navbar <br >
 🐱 Share your favorite facts with friends or fellow cat lovers. <br >
 🐱 Share your favorite photos with friends or fellow cat lovers. <br >
 
@@ -73,6 +72,6 @@ Once the app is open, you can: </strong><br >
 💉 Write Unit, Integration and E2E Tests <br >
 💉 Create About Me Page <br >
 💉 Create Reflection page to document learnings from this project <br >
-💉 Create a Nav bar <br >
+💉 Contact Me Page
 💉 Improve Home Page <br >
 💉 Enhance styling <br >
