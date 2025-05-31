@@ -192,8 +192,8 @@ button:hover {
       transform: scale(1.1);
       transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease, border-bottom 0.3s ease;      letter-spacing: 2px;
       font-weight: 700;
-      color: coral;
-      border-bottom: 2px solid coral;
+      color: cadetblue;
+      border-bottom: 2px solid cadetblue;
 }
 
 .nav-link.active {
