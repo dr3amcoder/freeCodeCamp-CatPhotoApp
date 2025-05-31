@@ -17,12 +17,12 @@ main, footer {
       display: inline-block;
 }
 
-footer a {
+.link-style {
       color: lightslategrey;
       text-decoration: none;
 }
 
-footer a:hover {
+.link-style:hover {
       color: coral;
       text-decoration: underline;
 }
@@ -117,6 +117,13 @@ label {
       color:teal;
 }
 
+ul.follow-list {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      display: inline;
+}
+
 ul.no-bullets {
       list-style-type: none;
       padding: 0;
@@ -127,6 +134,7 @@ ul.no-bullets {
 ul.no-bullets li {
       display: inline-block;
       margin-right: 20px;
+      padding: 10px;
 }
 
 button {
