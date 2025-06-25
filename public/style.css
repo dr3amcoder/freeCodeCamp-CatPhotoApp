@@ -18,7 +18,7 @@ main, footer {
 }
 
 .link-style {
-      color: lightslategrey;
+      color: lightseagreen;
       text-decoration: none;
 }
 
@@ -205,4 +205,12 @@ button:hover {
       color: white;
       font-weight: bold;
       border-radius: 12px;
+}
+
+.about-me-accounts, .developers-reflection-problem {
+      color: palevioletred;
+}
+
+code, .developers-reflection-fix {
+      color: lightseagreen;
 }

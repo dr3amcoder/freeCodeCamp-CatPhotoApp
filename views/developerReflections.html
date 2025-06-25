@@ -48,12 +48,17 @@
           <summary class="developers-reflection-title">FrontEnd</summary>
           <div>
             <p>
-              I used basic HTML and CSS for structure and design. As I got more confident, I started experimenting with layout styling,
-              responsive design, and smoother interactions using JavaScript. I also explored UI improvements like hover effects, animations,
-              and active state highlighting to make the app feel more polished. These small touches made a big difference in user experience.
+              The frontend started as a basic HTML structure. I improved the styling using custom CSS and made sure it was mobile-friendly
+              by using Flexbox and media queries. I learned how to structure the app in reusable sections like navbar, content pages, and form inputs.
             </p>
             <p>
-              One of the most rewarding parts was integrating the Cat Photos API and seeing real images appear on the page—it brought the app to life.
+              One of the highlights was using JavaScript to fetch cat images from an external API and dynamically display them in a responsive gallery.
+              This was my first time using <code>fetch()</code> and handling JSON data in a personal project. I also added loading states and error handling
+              to make the user experience smoother.
+            </p>
+            <p>
+              I wanted the site to feel playful and polished, so I spent time improving UI with pastel color palettes, hover animations, active link styles,
+              and a soft, rounded aesthetic.
             </p>
           </div>
         </details>
@@ -62,13 +67,49 @@
           <summary class="developers-reflection-title">Backend</summary>
           <div>
             <p>
-              I created a simple backend using Node.js, Express, and MongoDB. My goal was to store and retrieve cat facts.
-              I learned how to set up routes, create a model, seed the database, and connect everything together.
+              For the backend, I used Node.js and Express to build a basic API for serving static and dynamic cat facts.
+              I connected the backend to a MongoDB database using Mongoose. I created a model to store facts, and seeded
+              the database with a few fun cat facts to get started.
             </p>
             <p>
-              One of the challenges I faced was connecting the frontend form to the backend—understanding how data flows from the browser,
-              through the backend, and into the database helped me grasp full stack development better.
+              I built GET routes to retrieve facts and started working on a POST route so users could submit their own.
+              This helped me understand routing, HTTP methods, how to use middleware like <code>express.json()</code>,
+              and how to handle request/response logic.
             </p>
+            <p>
+              I deployed the backend to Render and linked it with the frontend. Setting up CORS correctly between frontend and backend
+              was a key step to get them to communicate properly.
+            </p>
+          </div>
+        </details>
+        <br>
+        <details>
+          <summary class="developers-reflection-title">Challenges & Fixes</summary>
+          <div>
+            <ul class="no-bullets">
+              <li>
+                <strong class="developers-reflection-problem">Problem:</strong> I wasn’t sure how to structure my code between frontend and backend.<br>
+                <strong class="developers-reflection-fix">Fix:</strong> I studied basic full stack project examples and followed the pattern of having separate folders
+                for frontend and backend. This helped with organization and deployment.
+              </li>
+              <br>
+              <li>
+                <strong class="developers-reflection-problem">Problem:</strong> The API fetch failed due to CORS issues after deploying the backend.<br>
+                <strong class="developers-reflection-fix">Fix:</strong> I learned how to enable CORS in my Express app using the <code>cors</code> middleware and set the correct headers.
+              </li>
+              <br>
+              <li>
+                <strong class="developers-reflection-problem">Problem:</strong> Submitting the form didn’t send data to the backend.<br>
+                <strong class="developers-reflection-fix">Fix:</strong> I realised I was not using <code>preventDefault()</code> in my form handler,
+                and also forgot to add <code>express.json()</code> in the backend to parse JSON body payloads. Once I fixed those,
+                the POST request worked.
+              </li>
+              <br>
+              <li>
+                <strong class="developers-reflection-problem">Problem:</strong> I was manually deploying changes each time which was tiring.<br>
+                <strong class="developers-reflection-fix">Fix:</strong> I set up automatic deployment from GitHub to Render. This helped speed up my development flow and reduce errors.
+              </li>
+            </ul>
           </div>
         </details>
     </main>
