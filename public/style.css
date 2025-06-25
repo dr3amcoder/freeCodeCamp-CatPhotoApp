@@ -157,11 +157,7 @@ button:hover {
 }
 
 .navbar {
-      width: 100%;
-      /* background-color: white; */
-      padding: 10px 0;
       text-align: center;
-      /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -177,7 +173,7 @@ button:hover {
       padding: 0;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: inherit;
 }
 
 .navbar-list li {
