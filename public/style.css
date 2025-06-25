@@ -70,7 +70,7 @@ main, footer {
       display: inline;
 }
 
-.cat-facts-title {
+.cat-facts-title, .developers-reflection-title {
       font-size: 20px;
       font-weight: bold;
       color: lightsalmon;
@@ -87,7 +87,7 @@ main, footer {
       width: 700px;
 }
 
-.cat-facts-container {
+.cat-facts-container, .developers-reflection {
       text-align: center;
       width: 700px;
 }
